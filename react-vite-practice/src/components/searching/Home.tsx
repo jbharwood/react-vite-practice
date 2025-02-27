@@ -1,8 +1,8 @@
-import { useMarketplaceStore } from "../stores/useMarketplaceStore";
+import { useMarketplaceStore } from "../../stores/useMarketplaceStore";
 import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 import ItemList from "./ItemList";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 // import axios from "axios";
 
 export default function Home() {
