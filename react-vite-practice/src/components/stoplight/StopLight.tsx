@@ -43,15 +43,24 @@ export default function StopLight() {
       <div className="stop-light-container">
         <div
           className={`light red-${lightIndex}`}
-          onClick={() => setLightIndex("1")}
+          onClick={() => {
+            setLightIndex("1");
+            clearTimeouts();
+          }}
         />
         <div
           className={`light yellow-${lightIndex}`}
-          onClick={() => setLightIndex("2")}
+          onClick={() => {
+            setLightIndex("2");
+            clearTimeouts();
+          }}
         />
         <div
           className={`light green-${lightIndex}`}
-          onClick={() => setLightIndex("3")}
+          onClick={() => {
+            setLightIndex("3");
+            clearTimeouts();
+          }}
         />
         <button onClick={cycleLights}>Cycle lights</button>
         <button onClick={cycleLightsDelays}>Cycle lights delays</button>
